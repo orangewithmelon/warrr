@@ -9,7 +9,7 @@ public class Game {
     public void startGame() {
         Player player1 = new Player();
         Player bot = new Player(1);
-        System.out.println("Welcome to War! This is a game of chance where you have to get 5 points to win this game. You have to choose a card that is higher than the bot to win one point. If you tie, then you have to play wordle in order to win.");
+        System.out.println("Welcome to War! This is a game of chance where you have to get 5 points to win this game.\nYou have to choose a card that is higher than the bot to win one point.\nIf you tie, then you have to play wordle in order to win.");
         System.out.println("The card numbers go from 1 to 8. You have to chose one of those card numbers. Once you used a card, you can't use it anymore.");
         while (!(player1.getPoints() == 5 || bot.getPoints() == 5 || rounds == 8)) {
             System.out.println("---------------------------------------------------------------------");
