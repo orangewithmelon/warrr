@@ -7,7 +7,6 @@ public class Player {
     private int card6;
     private int card7;
     private int card8;
-
     private int points;
 
     //Both constructors create the bot cards and player cards
