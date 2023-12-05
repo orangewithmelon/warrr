@@ -6,7 +6,7 @@ public class Game {
     public Game() {  }
 
     //Runs the game
-    public String startGame() {
+    public void startGame() {
         Player player1 = new Player();
         Player bot = new Player(1);
         System.out.println("Welcome to War! This is a game of chance where you have to get 5 points to win this game. You have to choose a card that is higher than the bot to win one point. If you tie, then you have to play wordle in order to win.");
@@ -35,12 +35,12 @@ public class Game {
         }
         if (player1.getPoints() == bot.getPoints()) {
             Wordle wordle = new Wordle(word());
-            return wordle.wordleGame();
+            System.out.println(wordle.wordleGame());
         }
         if (player1.getPoints() > bot.getPoints()) {
-            return "You WIN! You got more points than the bot.";
+            System.out.println("You WIN! You got more points than the bot.");
         } else {
-            return "You lost. The bot has more points than you.";
+            System.out.println("You lost. The bot has more points than you.");
         }
     }
 
