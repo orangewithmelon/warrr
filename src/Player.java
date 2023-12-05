@@ -10,6 +10,7 @@ public class Player {
 
     private int points;
 
+    //Both constructors create the bot cards and player cards
     public Player() {
         card1 = (int) (Math.random() * 12) + 1;
         card2 = (int) (Math.random() * 12) + 1;

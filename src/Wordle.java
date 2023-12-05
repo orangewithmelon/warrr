@@ -8,6 +8,7 @@ public class Wordle {
         this.word = word;
     }
 
+    //Runs Wordle
     public String wordleGame() {
         System.out.println(word);
         System.out.println("You must guess a 5 letter word in 6 tries. - means it's not in the word, * means it is in the word but not in the right place, and a letter means it's in the the word and in the right place.");

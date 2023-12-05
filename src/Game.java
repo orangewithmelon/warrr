@@ -5,6 +5,7 @@ public class Game {
     private int rounds;
     public Game() {  }
 
+    //Runs the game
     public String startGame() {
         Player player1 = new Player();
         Player bot = new Player(1);
@@ -43,6 +44,7 @@ public class Game {
         }
     }
 
+    //Creates a list of words
     private String word() {
         String[] array = new String[15]; //https://www.geeksforgeeks.org/java-program-to-write-an-array-of-strings-to-the-output-console/
         array[0] = "water";
